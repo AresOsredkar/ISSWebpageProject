@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>4um4u</title>
+        <meta charset="utf8">
+    </head>
+
+    <body>
+        <header>
+            <div class="navigation">
+                <div><img src=""></div>
+                <div class="navButtons">
+                    <ul>
+                        <li class="navBarItem"><a href="Feed.html">Feed</a></li>
+                        <li class="navBarItem"><a href="Browse.html">Browse</a></li>
+                        <li class="navBarItem"><a href="Account.html">My account</a></li>
+                        <li class="navBarItem"><a href="Register.html">Log In</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+        <div class="content">
+            <h1>Register your new account.</h1>
+            <form method="POST">
+                <table>
+                    <tr><td>Username</td><td><input type="text" id="username" required></td></tr>
+                    <tr><td>E-mail address</td><td><input type="text" id="email" required></td></tr>
+                    <tr><td>Password</td><td><input type="password" id="password" required></td></tr>
+                    <tr><td>Confirm Password</td><td><input type="password" id="passwordR" required></td></tr>
+                    <tr><td>Gender</td><td><input type="radio" name="gender" id="M" required><label>Male</label><input type="radio" name="gender" id="F"><label>Female</label><input type="radio" name="gender" id="O"><label>Other</label></td></tr>
+                    <tr><td>Interests</td><td><textarea id="desc"></textarea></td></tr>
+                    <tr><td>Date of Birth</td><td><input type="datetime" id="date" required></td></tr>
+                    <tr><td>Continent</td><td><input list="contin">
+                        <datalist id="contin"><option value="Europe">
+                        <option value="Asia"></option><option value="South America"></option><option value="North America"></option><option value="Africa"></option>
+                        </datalist></td></tr>
+                </table>
+                <label>I agree with terms</label><input type="checkbox" id="terms" required>
+                <label>I wish to get newsletters</label><input type="checkbox" id="newsletter">
+            
+                <input type="hidden" id="hidden"><br>
+                <button type="submit">Register</button><button type="reset">Reset</button><br>
+                <a href="Login.html">Already have an account?</a>
+            </form>
+        </div>
+    </body>
+</html>
