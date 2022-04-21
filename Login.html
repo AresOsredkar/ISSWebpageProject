@@ -9,6 +9,29 @@
                 background-color:blueviolet;
                 color:white;
             }
+            form {
+
+                width:60%;
+                margin:auto auto; 
+            }
+            h1 {
+                width:60%;
+                margin:10px auto; 
+            }
+            input {
+                border-radius: 5px;
+            }
+            td {
+                width:30%;
+                text-transform: capitalize;
+            }
+            button {
+                margin:10px;
+                padding:20px;
+                background-color:darkgreen;
+                color:white;
+                cursor: pointer;
+            }
         </style>
     </head>
 
@@ -29,10 +52,12 @@
         <div class="content">
             <h1>Login with your account</h1>
             <form method="POST">
-                <label>Username</label><input type="text" id="username" required><br>
-                <label>Password</label><input type="password" id="password" required><br>
-                <label>Remember password</label><input type="checkbox" id="remember"><br>
-                <button type="submit">Login</button><br>
+                <table>
+                    <tr><td>Username</td><td><input type="text" id="username" required><br></td></tr>
+                    <tr><td>Password</td><td><input type="password" id="password" required><br></td></tr>
+                    <tr><td>Remember password</td><td><input type="checkbox" id="remember"><br></td></tr>
+                </table>
+                    <tr><td><button type="submit">Login</button><br>
                 <a href="Register.html">Don't have an account yet?</a>
             </form>
         </div>
