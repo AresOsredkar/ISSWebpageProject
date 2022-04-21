@@ -3,22 +3,77 @@
     <head>
         <title>4um4u</title>
         <meta charset="utf8">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            #LogIn{
+                background-color:blueviolet;
+                color:white;
+            }
+            form {
+
+                width:60%;
+                margin:auto auto; 
+            }
+            h1 {
+                width:60%;
+                margin:10px auto; 
+            }
+            input {
+                border-radius: 5px;
+            }
+            td {
+                width:30%;
+                text-transform: capitalize;
+            }
+            button {
+                margin:10px;
+                padding:20px;
+                background-color:darkgreen;
+                color:white;
+                cursor: pointer;
+            }
+        </style>
     </head>
 
     <body>
         <header>
-            <div class="navigation">
-                <div><img src=""></div>
-                <div class="navButtons">
-                    <ul>
-                        <li class="navBarItem"><a href="Feed.html">Feed</a></li>
-                        <li class="navBarItem"><a href="Browse.html">Browse</a></li>
-                        <li class="navBarItem"><a href="Account.html">My account</a></li>
-                        <li class="navBarItem"><a href="Register.html">Log In</a></li>
+            <div class="navigation">             
+                <div class="butContainer">
+                    <ul class="navButtons">
+                        <li><a href="Feed.html" class="navBarItem navLink" id="Feed">Feed</a></li>
+                        <li><a href="Browse.html" class="navBarItem navLink" id="Browse">Browse</a></li>
+                        <li><a href="Account.html" class="navBarItem navLink" id="Account">My account</a></li>
+                        <li><a href="Register.html" class="navBarItem navLink" id="LogIn">Log In</a></li>
                     </ul>
                 </div>
+                <a class="logo" href="index.html">4um4u</a>
             </div>
         </header>
+        <script>
+                    
+            function Check(){
+                var msg = "";
+                if(document.getElementById('username').value.length < 3){
+                    msg += "Username too short\n";
+                }
+                if(document.getElementById('email').value.length < 8){
+                    msg += "Email inputed incorrectly\n";
+                }
+                if(document.getElementById('password').value.length < 8){
+                    msg += "Password too short\n";
+                }
+                if(document.getElementById('passwordR') != document.getElementById('password')){
+                    msg += "Passwords don't match\n";
+                }
+                const d = new Date();
+                if(getFullYear(document.getElementById('date')) > 2006){
+                    msg += "You must be 18 or older\n";
+                }
+                window.alert(msg);
+                return false;
+            }
+
+        </script>
         <div class="content">
             <h1>Register your new account.</h1>
             <form method="POST">
@@ -35,7 +90,7 @@
                         <option value="Asia"></option><option value="South America"></option><option value="North America"></option><option value="Africa"></option>
                         </datalist></td></tr>
                 </table>
-                <label>I agree with terms</label><input type="checkbox" id="terms" required>
+                <label>I agree with terms</label><input type="checkbox" id="terms" required><br>
                 <label>I wish to get newsletters</label><input type="checkbox" id="newsletter">
             
                 <input type="hidden" id="hidden"><br>

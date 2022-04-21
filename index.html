@@ -3,19 +3,45 @@
     <head>
         <title>4um4u</title>
         <meta charset="utf8">
+        <link rel="stylesheet" href="css/main.css">
+        <style>
+            p.krepko {
+                font-weight:bolder;
+            }
+            p.desno {
+                text-align: right;
+            }
+            .bela{
+                background-color:white;
+                border-radius:10px;
+            }
+            .modra{
+                background-color:blue;
+            }
+            .content{
+                display:flex;
+                justify-content: space-evenly;
+            }
+            .leftIndex {
+                width:45%;
+            }
+            .rightIndex {
+                width:45%;
+            }
+        </style>
     </head>
     <body>
         <header>
-            <div class="navigation">
-                <div><img src=""></div>
-                <div class="navButtons">
-                    <ul>
-                        <li class="navBarItem"><a href="Feed.html">Feed</a></li>
-                        <li class="navBarItem"><a href="Browse.html">Browse</a></li>
-                        <li class="navBarItem"><a href="Account.html">My account</a></li>
-                        <li class="navBarItem"><a href="Register.html">Log In</a></li>
+            <div class="navigation">             
+                <div class="butContainer">
+                    <ul class="navButtons">
+                        <li><a href="Feed.html" class="navBarItem navLink" id="Feed">Feed</a></li>
+                        <li><a href="Browse.html" class="navBarItem navLink" id="Browse">Browse</a></li>
+                        <li><a href="Account.html" class="navBarItem navLink" id="Account">My account</a></li>
+                        <li><a href="Register.html" class="navBarItem navLink" id="LogIn">Log In</a></li>
                     </ul>
                 </div>
+                <a class="logo" href="index.html">4um4u</a>
             </div>
         </header>
         <div class="content">
@@ -25,12 +51,12 @@
             </div>
 
             <div class="rightIndex">
-                <h1>TrendingPosts</h1>
+                <h1>Trending Posts</h1>
                 <div class="posts">
-                    <div class="post" id="1">
-                        <h2>Title</h2>
+                    <div class="post bela" id="1">
+                        <h2 class="modra">Title</h2>
                         <p>Datume objave: 12.3.2020</p>
-                        <p>Lorem ipsum lorem ipsum lorem ipsum</p>
+                        <p>Brez php ni objav</p>
                     </div>
                 </div>
             </div>
