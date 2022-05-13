@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>4um4u</title>
-        <meta charset="utf8">
-        <link rel="stylesheet" href="css/main.css">
+<?php include 'preset.php'?>
         <style>
             #LogIn{
                 background-color:blueviolet;
@@ -33,22 +28,6 @@
                 cursor: pointer;
             }
         </style>
-    </head>
-
-    <body>
-        <header>
-            <div class="navigation">             
-                <div class="butContainer">
-                    <ul class="navButtons">
-                        <li><a href="Feed.html" class="navBarItem navLink" id="Feed">Feed</a></li>
-                        <li><a href="Browse.html" class="navBarItem navLink" id="Browse">Browse</a></li>
-                        <li><a href="Account.html" class="navBarItem navLink" id="Account">My account</a></li>
-                        <li><a href="Register.html" class="navBarItem navLink" id="LogIn">Log In</a></li>
-                    </ul>
-                </div>
-                <a class="logo" href="index.html">4um4u</a>
-            </div>
-        </header>
         <script>
                     
             function Check(){
@@ -74,7 +53,6 @@
             }
 
         </script>
-        <div class="content">
             <h1>Register your new account.</h1>
             <form method="POST">
                 <table>
@@ -95,7 +73,7 @@
             
                 <input type="hidden" id="hidden"><br>
                 <button type="submit">Register</button><button type="reset">Reset</button><br>
-                <a href="Login.html">Already have an account?</a>
+                <a href="Login.php">Already have an account?</a>
             </form>
         </div>
     </body>

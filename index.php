@@ -1,10 +1,5 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>4um4u</title>
-        <meta charset="utf8">
-        <link rel="stylesheet" href="css/main.css">
-        <style>
+<?php include 'preset.php'?>
+<style>
             p.krepko {
                 font-weight:bolder;
             }
@@ -29,22 +24,6 @@
                 width:45%;
             }
         </style>
-    </head>
-    <body>
-        <header>
-            <div class="navigation">             
-                <div class="butContainer">
-                    <ul class="navButtons">
-                        <li><a href="Feed.html" class="navBarItem navLink" id="Feed">Feed</a></li>
-                        <li><a href="Browse.html" class="navBarItem navLink" id="Browse">Browse</a></li>
-                        <li><a href="Account.html" class="navBarItem navLink" id="Account">My account</a></li>
-                        <li><a href="Register.html" class="navBarItem navLink" id="LogIn">Log In</a></li>
-                    </ul>
-                </div>
-                <a class="logo" href="index.html">4um4u</a>
-            </div>
-        </header>
-        <div class="content">
             <div class="leftIndex">
                 <h1>4um4u</h1>
                 <p>The 4um made 4 you. Pretty self explanitory. Post to your hearts content and stick to the rules.</p>
